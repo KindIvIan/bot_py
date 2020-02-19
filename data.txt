@@ -1,0 +1,1 @@
+[{"id": 0, "url": "Kevin Kelly", "tags": ["The business", "10,000 startups", "Take X and add AI."]}, {"id": 1, "url": "Stephen Hawking", "tags": ["The development", "spell", "Humans"]}, {"id": 2, "url": "Claude Shannon", "tags": ["I visualize", "a time when we will", "be to robots what"]}]
