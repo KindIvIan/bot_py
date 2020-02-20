@@ -5,26 +5,8 @@ import random, json
 app = Flask(__name__)
 api = Api(app)
 
-ai_quotes = [
-    {
-        "id": 0,
-        "url": "Kevin Kelly",
-        "tags": ["The business", "10,000 startups", "Take X and add AI."]
-    },
-    {
-        "id": 1,
-        "url": "Stephen Hawking",
-        "tags": ["The development", "spell", "Humans"]
-    },
-    {
-        "id": 2,
-        "url": "Claude Shannon",
-        "tags": ["I visualize", "a time when we will", "be to robots what"]
-    }
-]
-
-with open('data.txt', 'w') as outfile:
-    json.dump(ai_quotes, outfile)
+with open('data.txt') as json_file:
+    ai_quotes = json.load(json_file)
 
 class Quote(Resource):
     def get(self, id=0):
